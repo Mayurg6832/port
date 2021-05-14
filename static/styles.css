@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  transition: 0.08s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  width: 17rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(16, 27, 32);
+  overflow: auto;
+}
+
+aside img {
+  widows: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 10px solid rgb(77, 76, 76);
+}
+
+aside a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  padding: 0.5rem 0;
+  color: rgba(255, 255, 255, 0.767);
+}
+
+aside a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.container {
+  margin: auto;
+  margin-left: 17rem;
+  padding: 3rem;
+  max-width: 70rem;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: rgb(16, 27, 32);
+}
+
+section p {
+  margin: 1rem 0;
+}
+
+#hey {
+  color: rgb(184, 60, 153);
+}
+
+#company {
+  color: rgb(53, 235, 235);
+}
+.projects-section {
+  display: grid;
+  margin-top: 2em;
+  grid-gap: 0.5em;
+}
+.projects-section a {
+  text-decoration: none;
+  color: black;
+}
+
+.projects-section a:hover {
+  color: rgba(0, 0, 0, 0.39);
+}
+
+.projects-section a img {
+  height: 15px;
+}
+
+#projects h3 {
+  text-transform: uppercase;
+  color: rgb(16, 27, 32);
+}
+
+#contact ul {
+  list-style: none;
+  display: grid;
+  grid-gap: 0.5em;
+}
+
+#contact ul a {
+  text-decoration: none;
+  color: rgb(16, 27, 32);
+}
+@media (max-width: 700px) {
+  aside img {
+    widows: 5rem;
+    height: 5rem;
+    width: 5rem;
+    border: none;
+  }
+  aside {
+    width: 100%;
+    height: auto;
+    position: fixed;
+  }
+  aside nav a {
+    float: left;
+    padding: 3px;
+    font-size: 0.5em;
+  }
+  div.container {
+    margin-left: 0;
+  }
+  section h2 {
+    font-size: 2rem;
+  }
+
+  .container {
+    margin-left: 0;
+  }
+}
